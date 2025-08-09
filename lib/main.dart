@@ -1,4 +1,4 @@
-import 'package:blood/routes/app_routes.dart';
+import 'package:blood/routes/routes.dart';
 import 'package:blood/screens/auth/login_screen.dart';
 import 'package:blood/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';

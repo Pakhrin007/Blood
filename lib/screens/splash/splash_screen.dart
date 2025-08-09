@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:blood/core/themes/theme.dart';
-import 'package:blood/routes/app_routes.dart';
+import 'package:blood/routes/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
