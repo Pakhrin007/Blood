@@ -31,6 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
   velocity_x: ^4.3.1
+  lottie: ^3.3.1
+  animated_splash_screen: ^1.3.0
+  
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -60,8 +64,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/images/auth_images/
+    - assets/lottie/
     - assets/fonts/
-  #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -76,9 +81,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Poppins
+    - family: libertin
       fonts:
-        - asset: assets/fonts/Poppins-Medium.ttf
+        - asset: assets/fonts/libertin.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

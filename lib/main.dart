@@ -1,5 +1,7 @@
 import 'package:blood/routes/routes.dart';
+import 'package:blood/screens/auth/forgot_screen.dart';
 import 'package:blood/screens/auth/login_screen.dart';
+import 'package:blood/screens/auth/register_screen.dart';
 import 'package:blood/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +20,8 @@ class MyApp extends StatelessWidget {
       routes: {
         MyRoutes.splashScreenRoute:(context)=>SplashScreen(),
         MyRoutes.loginScreenRoute:(context)=>LoginScreen(),
+        MyRoutes.registerScreenRoute:(context)=>RegisterScreen(),
+        MyRoutes.forgotPasswordSreenRoute:(context)=>ForgotScreen(),
       },
     );
   }
