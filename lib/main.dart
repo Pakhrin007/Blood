@@ -1,7 +1,9 @@
 import 'package:blood/routes/routes.dart';
 import 'package:blood/screens/auth/forgot_screen.dart';
 import 'package:blood/screens/auth/login_screen.dart';
+import 'package:blood/screens/auth/otp_page.dart';
 import 'package:blood/screens/auth/register_screen.dart';
+import 'package:blood/screens/auth/reset_password.dart';
 import 'package:blood/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,12 +18,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.splashScreenRoute,
+      initialRoute: MyRoutes.forgotPasswordSreenRoute,
       routes: {
         MyRoutes.splashScreenRoute:(context)=>SplashScreen(),
         MyRoutes.loginScreenRoute:(context)=>LoginScreen(),
         MyRoutes.registerScreenRoute:(context)=>RegisterScreen(),
         MyRoutes.forgotPasswordSreenRoute:(context)=>ForgotScreen(),
+        MyRoutes.otpScreenRoute:(context)=>OtpPage(),
+        MyRoutes.resetPasswordRoute:(context)=>ResetPassword()
       },
     );
   }

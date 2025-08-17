@@ -1,4 +1,6 @@
 import 'package:blood/core/themes/theme.dart';
+import 'package:blood/routes/routes.dart';
+import 'package:blood/widgets/checkbox.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -9,7 +11,6 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   // const LoginScreen({super.key});
-  bool _isChecked=false;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               20.heightBox,
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 8,right: 8),
                 child: TextFormField(
                    decoration: InputDecoration(
                       prefixIcon: Icon(Icons.email),
@@ -45,9 +46,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                 ),
               ),
-              6.heightBox,
+              13.heightBox,
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 8,right: 8),
                 child: TextFormField(
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.password),
@@ -67,23 +68,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 8),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    
-                    Row(
-                      children: [
-                        Checkbox(value:_isChecked, tristate: true, onChanged: (bool?newValue){
-                          setState((){
-                            _isChecked=newValue??false;
-                          });
-                        }),
-                        "Remember me".text.textStyle(TextStyle(fontFamily: 'libertin',fontSize: 16,fontWeight: FontWeight.w400)).make()
-                      ],
-                    ),
-                    "Forgot Password?".text.textStyle(TextStyle(fontFamily: 'libertin',fontSize: 16,fontWeight: FontWeight.w300,decoration: TextDecoration.underline)).make()
-                  ],
-                ),
+                child:CheckBoxWidget() 
               ),
               5.heightBox,
               // -----------------------login Butto------------------------
@@ -149,8 +134,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     ],
                   ),
                 ),
-              
-              
+                 
+              ),
+
+            10.heightBox,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  
+                  "Don't Have Account?".text.textStyle(TextStyle(fontSize: 16,fontFamily: 'libertin')).make(),
+                  "SignUp".text.color(Colors.blue).textStyle(TextStyle(fontSize: 16,fontFamily: 'libertin')).make().px(5).onInkTap(
+                () {
+                Navigator.pushReplacementNamed(context, MyRoutes.registerScreenRoute);
+                },
+                  ),
+                ],
               )
 
             ],
