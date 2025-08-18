@@ -4,6 +4,7 @@ import 'package:blood/screens/auth/login_screen.dart';
 import 'package:blood/screens/auth/otp_page.dart';
 import 'package:blood/screens/auth/register_screen.dart';
 import 'package:blood/screens/auth/reset_password.dart';
+import 'package:blood/screens/home/home.dart';
 import 'package:blood/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         MyRoutes.registerScreenRoute:(context)=>RegisterScreen(),
         MyRoutes.forgotPasswordSreenRoute:(context)=>ForgotScreen(),
         MyRoutes.otpScreenRoute:(context)=>OtpPage(),
-        MyRoutes.resetPasswordRoute:(context)=>ResetPassword()
+        MyRoutes.resetPasswordRoute:(context)=>ResetPassword(),
+        MyRoutes.homePageRooute:(context)=>HomePageScreen(),
       },
     );
   }

@@ -5,5 +5,6 @@ class MyRoutes {
   static String forgotPasswordSreenRoute = "/ForgotPasswordScreen";
   static String otpScreenRoute="/otpScreen";
   static String resetPasswordRoute="/ResetPasswordScreen";
+  static String homePageRooute="HomePageScreen";
    // Typo in "Sreen"
 }

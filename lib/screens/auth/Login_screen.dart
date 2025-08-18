@@ -86,7 +86,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: double.infinity,
                       alignment: Alignment.center,
                       child: "Login".text.color(Colors.white).textStyle(TextStyle(fontFamily: 
-                      'libertin',fontSize: 18,fontWeight: FontWeight.bold,letterSpacing: 1.38)).make(),
+                      'libertin',fontSize: 18,fontWeight: FontWeight.bold,letterSpacing: 1.38)).make().onInkTap(() {
+                        
+                        Navigator.pushReplacementNamed(context, MyRoutes.homePageRooute);
+                      },),
                       ),
                     ),
                   ),
