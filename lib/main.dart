@@ -6,6 +6,7 @@ import 'package:blood/screens/auth/register_screen.dart';
 import 'package:blood/screens/auth/reset_password.dart';
 import 'package:blood/screens/home/home.dart';
 import 'package:blood/screens/splash/splash_screen.dart';
+import 'package:blood/widgets/btn_navbar.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: BottomNavBar(),
       initialRoute: MyRoutes.splashScreenRoute,
       routes: {
         MyRoutes.splashScreenRoute:(context)=>SplashScreen(),
