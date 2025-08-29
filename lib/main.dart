@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNavBar(),
       initialRoute: MyRoutes.onboardingScreen,
       routes: {
         MyRoutes.splashScreenRoute:(context)=>SplashScreen(),
@@ -30,7 +29,6 @@ class MyApp extends StatelessWidget {
         MyRoutes.forgotPasswordSreenRoute:(context)=>ForgotScreen(),
         MyRoutes.otpScreenRoute:(context)=>OtpPage(),
         MyRoutes.resetPasswordRoute:(context)=>ResetPassword(),
-        MyRoutes.homePageRooute:(context)=>HomePageScreen(),
         MyRoutes.onboardingScreen:(context)=>OnboardingScreen()
       },
     );
