@@ -7,5 +7,6 @@ class MyRoutes {
   static String resetPasswordRoute="/ResetPasswordScreen";
   static String homePageRooute="HomePageScreen";
   static String onboardingScreen="/onBoardingScreen";
+  static String bottomNavBar='BottomNavBar';
    // Typo in "Sreen"
 }

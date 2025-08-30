@@ -1,5 +1,4 @@
-import 'package:blood/core/themes/theme.dart';
-import 'package:blood/routes/routes.dart';
+
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -142,7 +141,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ],
                 ),
               ),
-
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: buttom(),
@@ -195,14 +193,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 
-  Widget  buttom() {
+  Widget buttom() {
     return InkWell(
       child: Container(
         height: 50,
-        decoration: BoxDecoration(color: Vx.red500,borderRadius: BorderRadius.circular(12)),
-      
+        decoration: BoxDecoration(
+            color: Vx.red500, borderRadius: BorderRadius.circular(12)),
         width: double.infinity,
-        child: "Get Started".text.textStyle(TextStyle(color: Colors.white)).xl.bold.make().centered(),
+        child: "Get Started"
+            .text
+            .textStyle(TextStyle(color: Colors.white,fontFamily: 'Libertin',letterSpacing: 1.3))
+            .xl2
+            .bold
+            .make()
+            .centered(),
       ),
       onTap: () {
         Navigator.pushReplacementNamed(context, "/LoginScreen");
